@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int myfuc(char c[]);
+int main()
+{
+ int len;
+ 
+
+ cout << "how many character do you want to record\n";
+
+ char s[40];
+ cout << "Enter you character\n";
+ gets(s);
+ len = myfuc(s);
+ cout <<len;
+}
+
+int myfuc(char c[]){
+    int count=0;
+    for(int i=0;c[i]!='\0';i++){
+       count+=1; 
+    }
+    return count;
+}
