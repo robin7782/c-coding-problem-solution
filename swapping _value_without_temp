@@ -1,0 +1,19 @@
+// swapping any value without temporay variable
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+ int a,b;
+ cin >> a >> b;
+ 
+ 
+ a= a+b;
+ b=a-b;
+ a=a-b;
+ 
+ cout <<"a swaping value is : "<< a << endl;
+ cout <<"b swaping value is : "<< b << endl;
+}
